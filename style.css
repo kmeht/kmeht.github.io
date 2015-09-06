@@ -1,16 +1,25 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
 body {
+  background: linear-gradient(to bottom right, #030C22, #20293F);
+  color: #e9f0f9;
   display: flex;
   flex-direction: column;
   font-family: "Source Sans Pro", "Helvetica Neue", "Segoe UI", Arial, sans-serif;
   margin: 0;
-  padding: 10px;
-  color: #e9f0f9;
-  background: linear-gradient(to bottom right, #030C22, #20293F);
+  min-height: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  margin: 0 0 0.33em;
   line-height: 0.8em;
+  margin: 0 0 0.33em;
 }
 
 h1 {
@@ -23,14 +32,14 @@ p {
   margin: 0 0 0.33em;
 }
 
-a {
-  text-decoration: none;
-  color: #609ff9;
+ul {
+  padding: 0;
+  margin: 0;
 }
 
-hr {
-  border: 1px solid #eee;
-  border-width: 1px 0 0;
+a {
+  color: #609ff9;
+  text-decoration: none;
 }
 
 .header-link {
@@ -52,8 +61,10 @@ hr {
 .contact {
   font-size: 13px;
   font-weight: 400;
+  list-style: none;
 }
 
-.contact a {
+.contact > li {
+  display: inline;
   margin-right: 12px;
 }
