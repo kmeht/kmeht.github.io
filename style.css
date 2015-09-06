@@ -68,7 +68,13 @@ a {
   margin-right: 12px;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 800px) and (min-width: 481px) {
+  .intro {
+    max-width: 75%;
+  }
+}
+
+@media (max-width: 480px) {
   .intro {
     max-width: inherit;
   }
